@@ -28,6 +28,15 @@ encrypt:
   key: "45D81EC1EF61DF9AD8D3E5BB397F9"
 
 management:
+  endpoint:
+    health:
+      probes:
+        enabled: true
+  health:
+    livenessstate:
+      enabled: true
+    readinessstate:
+      enabled: true
   endpoints:
     web:
       exposure:
