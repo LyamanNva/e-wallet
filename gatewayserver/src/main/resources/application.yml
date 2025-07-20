@@ -26,3 +26,8 @@ info:
   app:
     name: "gatewayserver"
     description: "Bank Gateway Server Application"
+logging:
+  level:
+    com:
+      example:
+        gatewayserver: DEBUG

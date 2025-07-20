@@ -36,9 +36,17 @@ management:
     web:
       exposure:
         include: "*"
+  health:
+    livenessstate:
+      enabled: true
+    readinessstate:
+      enabled: true
   endpoint:
     shutdown:
       access: unrestricted
+    health:
+      probes:
+        enabled: true
   info:
     env:
       enabled: true
@@ -48,3 +56,8 @@ info:
     name: "accounts"
     description: "Bank Accounts Application"
     version: "1.0.0"
+logging:
+  level:
+    com:
+      bank:
+        accounts: DEBUG
